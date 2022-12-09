@@ -1,14 +1,15 @@
 import styled from 'styled-components';
+import React from "react"
 
 type ButtonProps = {
-    label?: string
+    label?: React.ReactNode
     variant?: "login" | "registration"
 }
 
 const StyledButton = styled.button<ButtonProps>`
     background-color: ${props => props.variant === "login" ? "blue" : "yellow" };
     text-align: center;
-    padding: 10px 50px;
+    padding: 10px 55px;
 `;
 
 const Button = ({ label, variant }: ButtonProps) => {

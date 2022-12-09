@@ -10,7 +10,7 @@ export default {
 const Template: ComponentStory<typeof Textbox> = (args) => <Textbox {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = { label: 'Textbox', variant: "Användarnamn" };
+Primary.args = { placeholder: 'Username', type:"text" };
 
 export const Secondary = Template.bind({});
-Secondary.args = { label: 'Textbox', variant: "Lösenord" };
+Secondary.args = { placeholder: 'Password', type:"password"};
